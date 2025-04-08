@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #222;
+}
+
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #eaeaea;
+}
+
+li input[type="text"] {
+  flex: 1;
+  margin-right: 8px;
+}
+
+li button {
+  background-color: #ff4d4f;
+}
+
+li button:hover {
+  background-color: #cc0000;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  margin-left: 6px;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: black;
+}
+
