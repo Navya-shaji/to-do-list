@@ -47,7 +47,8 @@ function ToDoList() {
       )
     );
   }
-
+ 
+ 
   return (
     <div className="container">
       <h1>Todo List</h1>
@@ -57,8 +58,12 @@ function ToDoList() {
           value={newTask}
           placeholder="Enter a Task"
           onChange={(e) => setNewTask(e.target.value)}
+         
         />
         <button onClick={handleAddTask}>Add</button>
+      
+      
+        
       </div>
       <ul className="task-list">
         {tasks.map((task, index) => (
@@ -69,9 +74,11 @@ function ToDoList() {
                   type="text"
                   value={editTask}
                   onChange={(e) => setEditTask(e.target.value)}
+              
                 />
                 <button onClick={saveTask}>Save</button>
                 <button onClick={cancelEdit}>Cancel</button>
+              
               </>
             ) : (
               <>
@@ -91,11 +98,13 @@ function ToDoList() {
                 </span>
                 <button onClick={() => startEditing(index)}>Edit</button>
                 <button onClick={() => deleteTask(index)}>Delete</button>
+              
               </>
             )}
           </li>
         ))}
       </ul>
+      
     </div>
   );
 }
