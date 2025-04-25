@@ -7,16 +7,17 @@ function ToDoList() {
   const [editTask, setEditTask] = useState("");
 
   function handleAddTask() {
-    if (newTask.trim() !== "" && !tasks.some((task) => task.text === newTask)) {
+    if (newTask.trim() !== "" && !tasks.some((task) => task.text === newTask) ) {
       setTasks([...tasks, { text: newTask, completed: false }]);
+    
       setNewTask("");
+     
     }
   }
-
-  function deleteTask(index) {
-    const updatedTasks = tasks.filter((_, i) => i !== index);
-    setTasks(updatedTasks);
-  }
+function deleteTask(index){
+  const updatedtask=tasks.filter((_,i)=>index!==i)
+  setTasks(updatedtask)
+}
 
   function startEditing(index) {
     setEditIndex(index);
